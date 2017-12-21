@@ -1,0 +1,44 @@
+//
+// Copyright (C) 2009 Roadkill Software
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+//
+// See the GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+//
+
+10 -5 0; 10 10 0; 0 10 0; 0 -5 0;   // Left Front Floor
+0 5 0; -10 5 0; -10 -10 0; 0 -10 0; // Right Back Floor
+
+10 -5 4; 0 -5 4; 0 10 4; 10 10 4;   // Left Front Ceiling
+0 5 4; 0 -10 4; -10 -10 4; -10 5 4; // Right Back Ceiling
+
+10 -5 0; 10 -5 4; 10 10 4; 10 10 0;     // Front Wall
+-10 5 0; -10 5 4; -10 -10 4; -10 -10 0; // Back Wall
+
+10 10 0; 10 10 4; 0 10 4; 0 10 0; // Front Left Wall
+0 5 0; 0 5 4; -10 5 4; -10 5 0;   // Back Left Wall
+
+-10 -10 0; -10 -10 4; 0 -10 4; 0 -10 0; // Back Right Wall
+0 -5 0; 0 -5 4; 10 -5 4; 10 -5 0;       // Front Right Wall
+
+0 10 0; 0 10 4; 0 5 4; 0 5 0;     // Mid Left Wall
+0 -10 0; 0 -10 4; 0 -5 4; 0 -5 0; // Mid Right Wall
+
+// Bounding Box
+12 12 6; -12 12 6; -12 -12 6; 12 -12 6;     // Top
+12 12 -2; 12 -12 -2; -12 -12 -2; -12 12 -2; // Bottom
+12 12 6; 12 -12 6; 12 -12 -2; 12 12 -2;     // Front
+-12 12 6; -12 12 -2; -12 -12 -2; -12 -12 6; // Back
+12 12 6; 12 12 -2; -12 12 -2; -12 12 6;     // Left
+-12 -12 6; -12 -12 -2; 12 -12 -2; 12 -12 6; // Right
